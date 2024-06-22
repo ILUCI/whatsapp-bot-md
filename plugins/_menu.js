@@ -86,19 +86,14 @@ bot.addCommand(
       }
     })
     const date = new Date()
-    let msg = `\`\`\`╭═══ LEVANTER ═══⊷
-┃❃╭──────────────
-┃❃│ Prefix : ${PREFIX}
-┃❃│ User : ${message.pushName}
-┃❃│ Time : ${date.toLocaleTimeString()}
-┃❃│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
-┃❃│ Date : ${date.toLocaleDateString('hi')}
-┃❃│ Version : ${VERSION}
-┃❃│ Plugins : ${PLUGINS.count}
-┃❃│ Ram : ${getRam()}
-┃❃│ Uptime : ${getUptime('t')}
-┃❃╰───────────────
-╰═════════════════⊷\`\`\`\n`
+    let msg = `\`\`\`┏━━⟪ *It'z Luci²²¹* ⟫━━⦿
+┃ ✗ Owner:- @918293838182
+┃ ✗ Plugins:-${PLUGINS.count}
+┃ ✗ Uptime:-${getUptime('t')}
+┃ ✗ Mem:- ${getRam()}
+┃ ✗ Time:- ${date.toLocaleTimeString()}
+┃ ✗ Date:- ${date.toLocaleDateString('hi')}
+┗━━━━━━━━━━━━━━━⦿\`\`\`\n`
 
     if (match && commands[match]) {
       msg += ` ╭─❏ ${textToStylist(match.toLowerCase(), 'smallcaps')} ❏\n`
